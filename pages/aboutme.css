@@ -12,7 +12,6 @@
     line-height: 1.6;
     padding: 20px;
   }
-  
 
   header {
     text-align: center;
@@ -30,9 +29,12 @@
     font-weight: normal;
     color: #6e5c4b;
   }
-  
+
   nav {
-    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
   }
   
   nav a {
@@ -40,57 +42,28 @@
     text-decoration: none;
     color: #3d2c22;
     font-weight: bold;
+    text-align: start;
   }
-  
+
   nav a:hover {
     text-decoration: underline;
   }
-  
-  
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+
+  main {
+    text-align: center;
+    font-weight: bold;
   }
-  
-  .content img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .text h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .text p {
-    max-width: 400px;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #3d2c22;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #5a4033;
-  }
-  
-  
+
   footer {
     margin-top: 60px;
     text-align: center;
     font-size: 0.9rem;
     color: #8b7b6c;
+    padding-top: 100px;
   }
 
-
+  img {
+    height: 200px;
+    width: auto;
+  }
+  
