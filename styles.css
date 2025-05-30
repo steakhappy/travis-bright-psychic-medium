@@ -23,6 +23,9 @@ body {
 
 main {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -111,7 +114,6 @@ footer {
   color: #8b7b6c;
   padding: 20px;
 }
-
 
 @media (max-width: 768px) {
   .content {
