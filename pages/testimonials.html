@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travis Bright | About Me</title>
+  <link rel="stylesheet" href="testimonials.css" />
+</head>
+<body>
+  <header>
+    <h1>TRAVIS BRIGHT</h1>
+    <h2>Testimonies</h2>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+   
+    <div class="slideshow-container">
+        <div class="testimonial active">"Amazing experience! Highly recommend." - Sarah J.</div>
+        <div class="testimonial">"He helped me find clarity when I needed it most." - David B.</div>
+        <div class="testimonial">"Genuine, insightful, and kind." - Maria L.</div>
+      </div>
+      
+
+      <button>Book Now</button>
+       
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Disclaimer: For entertainment purposes only.</p>
+  </footer>
+
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    let current = 0;
+  
+    function showNextTestimonial() {
+      testimonials[current].classList.remove('active');
+      current = (current + 1) % testimonials.length;
+      testimonials[current].classList.add('active');
+    }
+  
+    setInterval(showNextTestimonial, 4000); 
+  </script>
+  
+
+
+</body>
+</html>
+
+  

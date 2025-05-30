@@ -79,6 +79,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 50px;
+    width: auto;
   }
   
   button:hover {

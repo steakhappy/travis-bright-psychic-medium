@@ -65,5 +65,10 @@
   img {
     height: 200px;
     width: auto;
+    border-radius: 8px;
+  }
+
+  p {
+    padding-top: 10px;
   }
   
