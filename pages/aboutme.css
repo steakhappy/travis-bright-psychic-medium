@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE LAYOUT */
+
 html, body {
   height: 100%;
 }
@@ -19,7 +19,7 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+
 header {
   text-align: center;
   padding: 20px;
@@ -39,7 +39,7 @@ header h2 {
   color: #6e5c4b;
 }
 
-/* NAVIGATION */
+
 nav {
   position: absolute;
   top: 20px;
@@ -59,7 +59,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* MAIN LAYOUT */
+
 main {
   flex: 1;
   display: flex;
@@ -69,9 +69,9 @@ main {
   text-align: center;
 }
 
-/* IMAGE NEAR TOP & CENTERED */
+
 .top-image {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 img {
@@ -84,7 +84,7 @@ img {
   margin-right: auto;
 }
 
-/* CENTERED TEXT */
+
 .center-text {
   flex: 1;
   display: flex;
@@ -96,7 +96,7 @@ img {
   text-align: center;
 }
 
-/* FOOTER */
+
 footer {
   width: 100%;
   display: flex;
@@ -108,7 +108,7 @@ footer {
   padding: 20px;
 }
 
-/* MOBILE RESPONSIVENESS */
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.8rem;
