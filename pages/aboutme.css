@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 html, body {
   height: 100%;
 }
@@ -14,22 +13,23 @@ body {
   font-family: 'Georgia', serif;
   background-color: #f8ead8;
   color: #3d2c22;
-  line-height: 1.6;
+  line-height: 1.7;
   display: flex;
   flex-direction: column;
 }
 
-
+/* Header */
 header {
   text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 30px 20px 10px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 header h1 {
   font-size: 2.5rem;
   letter-spacing: 2px;
+  text-shadow: 1px 1px #ccc;
 }
 
 header h2 {
@@ -38,7 +38,6 @@ header h2 {
   font-weight: normal;
   color: #6e5c4b;
 }
-
 
 nav {
   position: absolute;
@@ -51,12 +50,15 @@ nav a {
   color: #3d2c22;
   font-weight: bold;
   background-color: #f8ead8;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
+  background-color: #f2ddbe;
 }
 
 
@@ -69,39 +71,32 @@ main {
   text-align: center;
 }
 
-
-.top-image {
-  margin-top: 10px;
-}
-
-img {
-  height: 200px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.top-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
 .center-text {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
+  max-width: 700px;
+  padding: 0 20px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.center-text p {
+  line-height: 1.8;
+  color: #3d2c22;
 }
 
 
 footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 0.9rem;
   color: #8b7b6c;
@@ -111,7 +106,7 @@ footer {
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   header h2 {
@@ -121,6 +116,7 @@ footer {
   nav {
     position: static;
     margin-top: 10px;
+    text-align: center;
   }
 
   nav a {
@@ -128,12 +124,14 @@ footer {
     margin-top: 10px;
   }
 
-  img {
-    width: 80%;
-    height: auto;
+  .top-image img {
+    max-width: 80%;
   }
 
   .center-text {
-    padding: 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: left;
   }
 }
+

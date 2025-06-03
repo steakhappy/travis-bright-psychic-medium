@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 html, body {
   height: 100%;
 }
@@ -93,11 +92,16 @@ main {
 .testimonial {
   position: absolute;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+  padding: 0 20px;
+  z-index: 1;
 }
 
 .testimonial.active {
   opacity: 1;
+  transform: translateY(0);
+  z-index: 2;
 }
 
 
@@ -111,6 +115,7 @@ button {
   height: 50px;
   width: 300px;
   font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -142,6 +147,7 @@ footer {
   nav {
     position: static;
     margin-top: 10px;
+    text-align: center;
   }
 
   nav a {
@@ -161,5 +167,5 @@ footer {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-}
+  }
 }
