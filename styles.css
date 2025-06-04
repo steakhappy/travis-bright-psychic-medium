@@ -135,6 +135,16 @@ footer {
   z-index: 1;
 }
 
+.fb-button {
+  background-color: #1877f2; /* Facebook blue */
+  margin-top: 10px;
+}
+
+.fb-button:hover {
+  background-color: #145dbf;
+}
+
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
