@@ -109,7 +109,7 @@ main {
 
 
 button {
-  padding: 10px 20px;
+  padding: 10px 25px;
   background-color: #3d2c22;
   color: white;
   border: none;
@@ -118,24 +118,30 @@ button {
   height: 50px;
   width: 300px;
   font-size: 1rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
   background-color: #5a4033;
+  transform: translateY(-2px);
 }
+
+button:focus {
+  outline: 2px dashed #3d2c22;
+  outline-offset: 4px;
+}
+
 
 
 footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 0.9rem;
   color: #8b7b6c;
   padding: 20px;
+  display: block;
 }
+
 
 
 @media (max-width: 768px) {
